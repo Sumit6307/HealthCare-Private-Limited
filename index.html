@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whole Slide Image Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Whole Slide Image Viewer</h2>
+      <p>Mon Oct 07 2024 16:39:07</p>
+    </header>
+
+    <div class="main-content">
+      <!-- Left Panel: Data Table -->
+      <div class="left-panel">
+        <table>
+          <thead>
+            <tr>
+              <th>RBC</th>
+              <th>Count</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Angled Cells</td><td>222</td><td>67%</td></tr>
+            <tr><td>Borderline Ovalocytes</td><td>50</td><td>20%</td></tr>
+            <tr><td>Burr Cells</td><td>87</td><td>34%</td></tr>
+            <tr><td>Fragmented Cells</td><td>2</td><td>0.12%</td></tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th>WBC</th>
+              <th>Count</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Basophil</td><td>222</td><td>67%</td></tr>
+            <tr><td>Eosinophil</td><td>50</td><td>20%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right Panel: Image Views -->
+      <div class="right-panel">
+        <div class="zoom-out-view">
+          <h3>WSI Zoomed Out View (Hub)</h3>
+          <p>Patient ID: Blood</p>
+        </div>
+        <div class="zoom-in-view">
+          <h3>WSI Zoomed In View</h3>
+        </div>
+        <button class="report-button">Report</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
